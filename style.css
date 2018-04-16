@@ -1,0 +1,272 @@
+/*
+Theme Name: FooDog - Team PLS
+Author: kevcharlier
+Author URI: 
+Description: My first responsive HTML5 theme
+Version: 1.0
+License: GNU General Public License v3 or later
+License URI: http://www.gnu.org/licenses/gpl-3.0.html
+Tags: blog, dog, dogfood
+*/
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #FFFFFF;
+  font-family: 'Crimson Text', serif;
+  /*font-family: 'Open Sans', sans-serif;*/
+}
+
+a:hover {
+  opacity: 0.65;
+}
+
+a {
+  text-decoration: none;
+}
+
+.content-thin {
+  width: 60%;
+}
+
+.article-loop {
+  width: 45%;
+  text-align: left;
+  margin: 5px;
+  padding: 10px;
+}
+
+@media screen and (max-width: 800px) {
+  .article-loop {
+    width: 99%;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .content-area,
+  .primary-sidebar {
+    width: 100%;
+  }
+}
+
+.article-loop,
+.article-full {
+  display: inline-block;
+  vertical-align: top;
+  border-radius: 4px;
+  margin-bottom: 4px;
+}
+
+/* header.php */
+
+.my-logo {
+  width: 100%;
+  text-align-last: center;
+}
+
+@media only screen and (max-width: 400px) {
+  .my-logo img {
+    width: 100%;
+  }
+}
+
+.my-logo h1 {
+  background-color: #FFFFFF;
+  ;
+}
+
+.menu-foodog-container {
+  padding-bottom: 10px;
+  width: 593px;
+  text-align-last: center;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media screen and (max-width: 800px) {
+  .menu-foodog-container {
+    width: 99%;
+  }
+}
+
+@media only screen and (max-width: 332px) {
+  .menu-foodog-container {
+    width: 100%;
+  }
+}
+
+#menu-foodog {
+  list-style-type: none;
+  text-transform: uppercase;
+}
+
+#menu-foodog li {
+  margin-left: 2px;
+  float: left;
+  padding-right: 30px;
+}
+
+#menu-foodog a {
+  color: #868686;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+hr {
+  width: 1280px;
+  border-top: 1px solid #F7F7F7;
+}
+
+@media only screen and (max-width: 625px) {
+  hr {
+    display: none;
+  }
+}
+
+/* Topbar */
+
+.topbar {
+  text-align: right;
+}
+
+.topbar ul {
+  list-style: none;
+  margin-left: 0;
+  padding-left: 0;
+}
+
+.topbar li {
+  display: inline-block;
+  margin-left: 15px;
+  height: 25px;
+}
+
+.topbar img {
+  width: auto;
+  height: 25px;
+}
+
+/* Search */
+
+input[type=search] {
+  -webkit-appearance: textfield;
+  -webkit-box-sizing: content-box;
+  font-size: 100%;
+}
+
+input::-webkit-search-decoration,
+input::-webkit-search-cancel-button {
+  display: none;
+}
+
+input[type=search] {
+  background: #ededed url(https://static.tumblr.com/ftv85bp/MIXmud4tx/search-icon.png) no-repeat 9px center;
+  border: solid 1px #ccc;
+  padding: 15px 10px 9px 32px;
+  width: 0px;
+  height: 10px;
+  -webkit-border-radius: 10em;
+  -moz-border-radius: 10em;
+  border-radius: 10em;
+  -webkit-transition: all .5s;
+  -moz-transition: all .5s;
+  transition: all .5s;
+}
+
+input[type=search]:focus {
+  width: 100px;
+  background-color: #fff;
+  border-color: #66CC75;
+  -webkit-box-shadow: 0 0 5px rgba(109, 207, 246, .5);
+  -moz-box-shadow: 0 0 5px rgba(109, 207, 246, .5);
+  box-shadow: 0 0 5px rgba(109, 207, 246, .5);
+}
+
+input:-moz-placeholder {
+  color: #999;
+}
+
+input::-webkit-input-placeholder {
+  color: #999;
+}
+
+/* Page.php */
+
+.title {
+  width: auto;
+  text-align: center;
+  background-color: #F7F7F7;
+  margin-bottom: 20px;
+}
+
+.title h2 {
+  text-transform: uppercase;
+  color: #6f7375;
+  font-weight: bold;
+}
+
+@media only screen and (max-width: 625px) {
+  .title {
+    margin-top: 70px;
+  }
+}
+
+.lcp_catlist {
+  list-style: none;
+}
+
+/* Index.php */
+
+.index h3 {
+  font-weight: bold;
+  font-size: 16px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.index h4 {
+  font-weight: bold;
+  font-size: 22px;
+  font-family: 'Open Sans', sans-serif;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.index h4 a {
+  color: #FFA186;
+}
+
+.index h5 {
+  font-weight: bold;
+  font-size: 30px;
+  font-family: 'Open Sans', sans-serif;
+  text-align: center;
+  color: #5D6266;
+  text-transform: uppercase;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.index a p {
+  font-weight: bolder;
+  font-size: 20px;
+  color: #606569;
+  text-transform: uppercase;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.index p {
+  text-align: center;
+  color: #7E7E7E;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.size-post-thumbnail {
+  height: 300px;
+  width: auto;
+  border: 10px solid #F7F7F7;
+  overflow: hidden;
+  -webkit-box-shadow: 5px 5px 5px #111;
+  box-shadow: 5px 5px 5px #111;
+}
